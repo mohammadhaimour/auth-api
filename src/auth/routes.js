@@ -29,21 +29,7 @@ authRouter.post('/signin', basicAuth, (req, res, next) => {
   res.status(200).json(user);
 });
 
-// authRouter.get('/users', bearerAuth, permissions('read'), async (req, res, next) => {
-//   const userRecords = await users.findAll({});
-//   const list = userRecords.map(user => user.username);
-//   res.status(200).json(list);
-// });
-// authRouter.post('/users', bearerAuth, permissions('create'), async (req, res, next) => {
-//   const userRecords = await users.findAll({});
-//   const list = userRecords.map(user => user.username);
-//   res.status(200).json(list);
-// });
-// authRouter.put('/users', bearerAuth, permissions('update'), async (req, res, next) => {
-//   const userRecords = await users.findAll({});
-//   const list = userRecords.map(user => user.username);
-//   res.status(200).json(list);
-// });
+
 authRouter.get('/users', bearerAuth, permissions('delete'), async (req, res, next) => {
   const userRecords = await users.findAll({});
   const list = userRecords.map(user => user.username);
