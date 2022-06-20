@@ -2,14 +2,11 @@
 
 ## heroku Link:
 
- [Heroku App]()
+ [Heroku App](https://haimour-auth-api.herokuapp.com/)
 
 ___
 
-## Action :
- [Action ]()
 
-___
 
 ## PR
  [PR ](https://github.com/mohammadhaimour/auth-api/branches)
